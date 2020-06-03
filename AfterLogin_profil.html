@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+
+    <style>
+      table,th,td {
+      border : 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,td {
+      padding: 5px;
+    }
+    </style>
+
+</head>
+<body>
+      <!-- navabar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-black">
+        <div class="container">
+        <a class="navbar-brand mt-2" href="#"><img src="images/logo.png" height="60px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-co" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active mr-3">
+              <a class="nav-link text-light text-uppercase" href="AfterLogin_index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link text-light text-uppercase" href="AfterLogin_product.html">Product</a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link text-light text-uppercase" href="AfterLogin_gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link text-light text-uppercase" href="AfterLogin_profil.html">Profile</a>
+            </li>  
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+<!--isi profil-->
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h4 class="text-center">Profile</h4>
+                    <img src="images/foto profil.jpg" alt="" style="width: 45%;" class="mx-auto d-block mt-3">
+                <div class="row mb-0 mt-4">
+                    <div class="col-4">
+                        <h6>Username</h6>
+                    </div>
+                    <div class="col-8">
+                        <p id="username"></p>
+                    </div>
+                </div>
+                <hr class="mt-0">
+                <div class="row mb-0">
+                    <div class="col-4">
+                        <h6>Name</h6>
+                    </div>
+                    <div class="col-8">
+                        <p id="name"></p>
+                    </div>
+                </div>
+                <hr class="mt-0">
+                <div class="row mb-0">
+                    <div class="col-4">
+                        <h6>Email</h6>
+                    </div>
+                    <div class="col-8">
+                        <p id="email"></p>
+                    </div>
+                </div>
+                <hr class="mt-0">
+                <div class="row mb-0">
+                    <div class="col-4">
+                        <h6>No Telepon</h6>
+                    </div>
+                    <div class="col-8">
+                        <p id="telepon"></p>
+                    </div>
+                </div>
+                <hr class="mt-0">
+                <div class="row mb-0">
+                    <div class="col-4">
+                        <h6>Address</h6>
+                    </div>
+                    <div class="col-8">
+                        <p id="address"></p>
+                    </div>
+                </div>
+
+                <!-- Personal Data -->
+                <script>
+                  var txt = '{"username":"rezarahardian", "name":"Reza Rahardian", "email":"Reza@gmail.com", "telepon":"085720889654", "address":"Bogor, Jawa Barat, Indonesia"}'
+                  var obj = JSON.parse(txt);
+                  document.getElementById("username").innerHTML = obj.username;
+                  document.getElementById("name").innerHTML = obj.name;
+                  document.getElementById("email").innerHTML = obj.email;
+                  document.getElementById("telepon").innerHTML = obj.telepon;
+                  document.getElementById("address").innerHTML = obj.address;
+                </script>
+
+                <hr class="mt-0">
+                <div class="row">
+                  <button type="button" class="btn btn-sm btn-outline-dark" onclick="loadDoc()">History Transaction</button>
+                  <br><br>
+                  <table id="buy_car"></table>
+
+                  <script>
+                  function loadDoc() {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                      if (this.readyState == 4 && this.status == 200) {
+                        myFunction(this);
+                      }
+                    };
+                    xhttp.open("GET", "history_transaction.xml", true);
+                    xhttp.send();
+                  }
+                  function myFunction(xml) {
+                    var i;
+                    var xmlDoc = xml.responseXML;
+                    var table="<tr><th>Name</th><th>Date</th><th>Price</th></tr>";
+                    var x = xmlDoc.getElementsByTagName("CAR");
+                    for (i = 0; i <x.length; i++) { 
+                      table += "<tr><td>" +
+                      x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+                      "</td><td>" +
+                      x[i].getElementsByTagName("DATE")[0].childNodes[0].nodeValue +
+                      "</td><td>" +
+                      x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue +
+                      "</td></tr>";
+                    }
+                    document.getElementById("buy_car").innerHTML = table;
+                  }
+                  </script>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col text-left">
+                        <a href="#">Edit Profile</a>
+                    </div>
+                    <div class="col text-right">
+                      <a type="button" href="index.html" class="btn btn-default btn-dark btn-block btn-sm">
+                        <span class="glyphicon glyphicon-log-out"></span> Log out
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+      </div>
+    
+      <footer class="jumbotron-full mt-5">
+        <div class="row">
+          <div class="col text-center">
+            <a href="#">
+              <img src="images/facebook.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/linkedin.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/twitter.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/youtube.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center text-white">
+            <p style="font-family: 'Courier New', Courier, monospace;">&copy; 2020 SUPER CAR COMPANY</p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col text-center" style="font-family: 'Courier New', Courier, monospace;">
+            <a href="#" class="text-light mr-4">
+              <span>CONTACT</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>CAREER</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>MEDIA</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>DATA PROTECTION NOTICE</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>LEGAL NOTICE</span>
+            </a>
+            <a href="#" class="text-light">
+              <span>CODE OF PRODUCT</span>
+            </a>
+          </div>
+        </div>
+      </footer>    
+    </body>
+</html>

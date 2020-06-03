@@ -1,0 +1,221 @@
+fontku{
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  }
+
+.corner {
+    border-radius: 20px;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1.6px solid silver;
+  }
+
+.parallax {
+    /* The image used */
+    background-image: url("../../images/car_back.jpg");
+  
+    /* Full height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  body, html {
+    height: 100%;
+  }
+
+  .jumbotron-full {
+    padding: 2rem 1rem;
+    margin-bottom: 0;
+    background-color: black;
+    border-radius: 0;
+  }
+
+  a.span {
+    color: white;
+  }
+
+  .bg-black {
+    background-color: black !important;
+  }
+
+  .text-black {
+    color: black !important;
+  }
+
+  .m-galery{
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 16px;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    margin-left: 16px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  /* Detail Product */
+  .jumbotron-detail {
+    padding: 2rem 1rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+  }
+
+  .backgroud-detail {
+    min-width: 992px !important;
+    background-color: white;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+  }
+
+  .card-pembayaran {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(231, 231, 231);
+    background-clip: border-box;
+    border: 1px solid rgba(238, 255, 0, 0.89);
+    border-radius: 0.25rem;
+  }
+
+
+.panel, .flip {
+  padding: 0px;
+  text-align: left;
+}
+
+.panel {
+  padding: 0px;
+  display: none;
+}
+
+.panel2, .flip2 {
+  padding: 0px;
+  text-align: left;
+}
+
+.panel2 {
+  padding: 0px;
+  display: none;
+}
+
+.panel3, .flip3 {
+  padding: 0px;
+  text-align: left;
+}
+
+.panel3 {
+  padding: 0px;
+  display: none;
+}
+

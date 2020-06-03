@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detail Product</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script> 
+      $(document).ready(function(){
+        $(".flip").click(function(){
+          $(".panel").slideToggle("slow");
+          $(".panel2").slideUp("slow");
+          $(".panel3").slideUp("slow");
+        });
+      });
+    </script>
+
+    <script> 
+      $(document).ready(function(){
+        $(".flip2").click(function(){
+          $(".panel2").slideToggle("slow");
+          $(".panel").slideUp("slow");
+          $(".panel3").slideUp("slow");
+        });
+      });
+    </script>
+    
+    <script> 
+      $(document).ready(function(){
+        $(".flip3").click(function(){
+          $(".panel3").slideToggle("slow");
+          $(".panel2").slideUp("slow");
+          $(".panel").slideUp("slow");
+        });
+      });
+    </script>
+</head>
+<body>
+      <!-- navabar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-black">
+        <div class="container">
+        <a class="navbar-brand mt-2" href="#"><img src="images/logo.png" height="60px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-co" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active mr-3">
+              <a class="nav-link text-light text-uppercase" href="AfterLogin_index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link text-light text-uppercase" href="AfterLogin_product.html">Product</a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link text-light text-uppercase" href="AfterLogin_gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link text-light text-uppercase" href="AfterLogin_profil.html">Profile</a>
+            </li>  
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+      <!--Isi Pembayaran-->
+      <div class="jumbotron-detail">
+        <div class="row backgroud-detail mr-5 ml-5 mb-3 shadow">
+            <div class="col">
+                <div class="row ml-4">
+                    <a href="#" class="row">
+                        <i class='fas fa-angle-double-left mr-2' style='font-size:24px; color: #111111;'></i>
+                        <h5 style="color: #111111;">Back</h5>
+                    </a>
+                </div>
+                <hr>
+                <div class="row card-pembayaran ml-4 mr-4">
+                    <div class="m-1 row">
+                        <i class='fas fa-exclamation-triangle ml-2 mr-2 mb-0' style='font-size:15px;color:rgb(255, 217, 0)'></i>
+                        <div>CAUTION: Do not enter incorrect account numbers and amounts</div>
+                    </div>
+                </div>
+                <div class="row mt-4 ml-4">
+                    <div class="col-sm-auto">
+                        <h6>Total Payment</h6>
+                    </div>
+                    <div class="col text-danger">$1,914,000</div>
+                </div>
+                <div class="row mt-4 ml-4 mr-4">
+                    <div class="col"></div>
+                    <div class="col">
+                        <div class="row">
+                            <img src="images/bca.png" class="mr-2" style="width: 17%; height: 17%;" alt=""/>
+                            <label for="bank">BCA Bank (automatic check)</label>
+                        </div>
+                        <div class="row mt-3">
+                            <p>No. Rekening</p>
+                        </div>
+                        <div  class="row mt-0">
+                            <p style="font-size: 20px;" class="text-danger mr-4">126 0857 2088 4053</p>
+                            <a href="#" style="font-size: 15px; color: rgb(0, 174, 255);" class="mt-1">COPY</a>
+                        </div>
+                        <div class="row">
+                            <p style=" color: rgb(0, 174, 255);">Checked in 10 minutes after payment is successful</p>
+                        </div>
+                        <div class="row">
+                            <p>Pay for the order to the Virtual Account above before making an order again with the Virtual Account to keep the number the same</p>
+                        </div>
+                        <div class="row">
+                            <p>Only accept from BCA Bank</p>
+                        </div>
+                        <hr>
+
+                        <div class="flip mt-4">
+                          <p>ATM Transfer Instructions</p>
+                        </div>
+                        <hr>
+                        <div class="panel">
+                          <p><b>1.</b> Select Other Transaction> Transfer> To BCA Virtual Account.</p>
+                          <p><b>2.</b> Enter the Virtual Account number <b>126 085720884053</b> and select Correct.</p>
+                          <p><b>3.</b> Check the information displayed on the screen. Make sure the store is SuperCar, the total bill is correct and your username is rezarahardian. If correct, select Yes.</p>
+                          <hr>
+                        </div>
+                        <div class="flip2 mt-4">
+                          <p>IBanking Transfer Instructions</p>
+                        </div>
+                        <hr>
+                        <div class="panel2">
+                          <p><b>1.</b> Select Transfer Funds> Transfer to BCA Virtual Account.</p>
+                          <p><b>2.</b> Check the Virtual Account number and enter <b>126 085720884053</b> and select Continue.</p>
+                          <p><b>3.</b> Check the information displayed on the screen. Make sure the store is SuperCar, the total bill is correct and your username is rezarahardian. If correct, select Yes.</p>
+                          <p><b>4.</b> Enter your KeyBCA response and click Submit.</p>
+                          <hr>
+                        </div>
+                        <div class="flip3 mt-4">
+                          <p>Petunjuk Transfer mBanking</p>
+                        </div>
+                        <hr>
+                        <div class="panel3">
+                          <p><b>1.</b> Select m-Transfer> BCA Virtual Account.</p>
+                          <p><b>2.</b> Enter the Virtual Account number <b>126 085720884053</b> and select Send.</p>
+                          <p><b>3.</b> Check the information displayed on the screen. Make sure the store is SuperCar, the total bill is correct and your username is rezarahardian. If correct, select Yes.</p>
+                          <p><b>4.</b> Enter your m-BCA PIN and select OK.</p>
+                        </div>
+
+                        <div class="row">
+                          <a href="AfterLogin_index.html" class="btn btn-danger btn-block">OK</a>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+      <!--PENUTUP-->
+      <footer class="jumbotron-full">
+        <div class="row">
+          <div class="col text-center">
+            <a href="#">
+              <img src="images/facebook.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/linkedin.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/twitter.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/youtube.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center text-white">
+            <p style="font-family: 'Courier New', Courier, monospace;">&copy; 2020 SUPER CAR COMPANY</p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col text-center" style="font-family: 'Courier New', Courier, monospace;">
+            <a href="#" class="text-light mr-4">
+              <span>CONTACT</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>CAREER</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>MEDIA</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>DATA PROTECTION NOTICE</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>LEGAL NOTICE</span>
+            </a>
+            <a href="#" class="text-light">
+              <span>CODE OF PRODUCT</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      <!--Javascript-->
+      <script src="bootstrap/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CATALOG>
+  <CAR>
+    <NAME>Bugatti Veyron</NAME>
+    <DATE>3 September 2020</DATE>
+    <PRICE>$1,914,000</PRICE>
+  </CAR>
+  <CAR>
+    <NAME>Bugatti Divo</NAME>
+    <DATE>7 September 2020</DATE>
+    <PRICE>$4,890,000</PRICE>
+  </CAR>
+  <CAR>
+    <NAME>Bugatti Chiron</NAME>
+    <DATE>10 September 2020</DATE>
+    <PRICE>$2,990,000</PRICE>
+  </CAR>
+</CATALOG>

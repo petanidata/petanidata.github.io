@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detail Product</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+</head>
+<body>
+      <!-- navabar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-black">
+        <div class="container">
+        <a class="navbar-brand mt-2" href="#"><img src="images/logo.png" height="60px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-co" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active mr-3">
+              <a class="nav-link text-light text-uppercase" href="AfterLogin_index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link text-light text-uppercase" href="AfterLogin_product.html">Product</a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link text-light text-uppercase" href="AfterLogin_gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link text-light text-uppercase" href="AfterLogin_profil.html">Profile</a>
+            </li>  
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+      <!--Isi Detail-->
+      <div class="jumbotron-detail">
+        <div class="row backgroud-detail mr-5 ml-5">
+          <div class="col text-center">
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+              <!-- Full-width images with number text -->
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                  <img src="images/produk1_bugatti.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                  <img src="images/produk2_bugatti.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                  <img src="images/produk3_bugatti.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                  <img src="images/produk1_bugatti.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                  <img src="images/produk2_bugatti.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                  <img src="images/produk3_bugatti.jpg" style="width:100%">
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <!-- Image text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <!-- Thumbnail images -->
+              <div class="row">
+                <div class="col text-center">
+                  <div class="column">
+                    <img class="demo cursor" src="images/produk1_bugatti.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/produk2_bugatti.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/produk3_bugatti.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/produk4_bugatti.jpg" style="width:100%" onclick="currentSlide(4)" alt="The Woods">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/produk5_bugatti.jpg" style="width:100%" onclick="currentSlide(5)" alt="Cinque Terre">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/produk6_bugatti.jpg" style="width:100%" onclick="currentSlide(6)" alt="Mountains and fjords">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Spesifikasi-->
+          <div class="col">
+            <div class="row">
+              <div class="col">
+              <h4>Bugatti Veyron</h4>
+              <hr>
+              <h5>Spesifikasi</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia perferendis illo maxime animi debitis quidem, optio pariatur vero sequi sint inventore, cum mollitia cumque nesciunt asperiores non consequuntur hic.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nam mollitia dolor quod ea dicta ipsum voluptatibus ad soluta adipisci nihil, sed, blanditiis nostrum aliquam odio provident tempora! Doloribus, quis?</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h6>Price : $1,914,000</h6>
+              </div>
+              <div class="col text-right">
+                <a class="btn btn-dark" href="AfterLogin_create_pesanan.xhtml">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--PENUTUP-->
+      <footer class="jumbotron-full">
+        <div class="row">
+          <div class="col text-center">
+            <a href="#">
+              <img src="images/facebook.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/linkedin.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/twitter.png" alt="" class="mr-1">
+            </a>
+            <a href="#">
+              <img src="images/youtube.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center text-white">
+            <p style="font-family: 'Courier New', Courier, monospace;">&copy; 2020 SUPER CAR COMPANY</p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col text-center" style="font-family: 'Courier New', Courier, monospace;">
+            <a href="#" class="text-light mr-4">
+              <span>CONTACT</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>CAREER</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>MEDIA</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>DATA PROTECTION NOTICE</span>
+            </a>
+            <a href="#" class="text-light mr-4">
+              <span>LEGAL NOTICE</span>
+            </a>
+            <a href="#" class="text-light">
+              <span>CODE OF PRODUCT</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      <!--Javascript-->
+      <script src="bootstrap/js/script.js"></script>
+    </body>
+</html>
